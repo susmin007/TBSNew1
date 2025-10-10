@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import './assets/fonts/fonts.css';
-import { BrowserRouter } from 'react-router-dom'
+import {  HashRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
-
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>,
 )

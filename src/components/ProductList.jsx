@@ -3,14 +3,21 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
+import photocopier_rentals from '../images/Photocopier.jpg'
+import large_format_printers from '../images/LargeFormatPrinter.jpg'
+import projectors_video_walls from '../images/projector.jpeg'
+import barcode_solutions from '../images/barcode.avif'
+import laminationEquipment from '../images/laminationEquipment.jpg'
+import officeEquipment from '../images/officeEquipment.jpg'
+
 
 const products = [
-  { id: "photocopier-rentals", title: "Photocopier Rentals", des: "Flexible rental options with full maintenance included.", details: `Our photocopier rental service provides flexible, affordable options with full maintenance. Get high-quality prints, reliable machines, and hassle-free performance without long-term commitments.`, img: "/Photocopier.jpg" },
-  { id: "large-format-printers", title: "Large Format Printers", des: "Graphtec & Mistral cutting plotters for precision work.", details: `We specialize in large-format printing including roll-up stands, flex prints, display boards, and exhibition counters. High-quality prints designed to deliver visual impact with durability and precision.`, img: "/images/LargeFormatPrinter.jpg" },
-  { id: "projectors-video-walls", title: "Projectors & Video Walls", des: "4K Ultra HD with Android support for seamless presentations.", details: `We offer projectors, video walls, and digital signage with dual OS support, wireless transmitters, and sharp displays to make every presentation stand out.`, img: "/images/projector.jpeg" },
-  { id: "barcode-solutions", title: "Barcode Solutions", des: "Labels, stickers, ribbons & thermal printing supplies.", details: `We offer barcode sticker rolls in various sizes such as 100x150mm, 50x50mm, and 38x25mm, plus thermal ribbons in 110mm x 300m and 60mm x 300m. Reliable and professional labeling for retail, logistics, and inventory.`, img: "/images/barcode.avif" },
-  { id: "lamination-equipment", title: "Lamination Equipment", des: "Professional hot & cold laminator series.", details: `Our lamination equipment offers glossy and matte finishes for documents, posters, and signage. Ensure durability and a polished professional look for all your materials.`, img: "/images/laminationEquipment.jpg" },
-  { id: "office-equipments", title: "Office Equipments", des: "Binding, shredding & scanning machines.", details: `We provide essential office equipment including binding machines, shredders, and scanners. Reliable tools to keep your office workflow smooth and efficient.`, img: "/images/officeEquipment.jpg" },
+  { id: "photocopier-rentals", title: "Photocopier Rentals", des: "Flexible rental options with full maintenance included.", details: `Our photocopier rental service provides flexible, affordable options with full maintenance. Get high-quality prints, reliable machines, and hassle-free performance without long-term commitments.`, img: photocopier_rentals },
+  { id: "large-format-printers", title: "Large Format Printers", des: "Graphtec & Mistral cutting plotters for precision work.", details: `We specialize in large-format printing including roll-up stands, flex prints, display boards, and exhibition counters. High-quality prints designed to deliver visual impact with durability and precision.`, img: large_format_printers },
+  { id: "projectors-video-walls", title: "Projectors & Video Walls", des: "4K Ultra HD with Android support for seamless presentations.", details: `We offer projectors, video walls, and digital signage with dual OS support, wireless transmitters, and sharp displays to make every presentation stand out.`, img: projectors_video_walls },
+  { id: "barcode-solutions", title: "Barcode Solutions", des: "Labels, stickers, ribbons & thermal printing supplies.", details: `We offer barcode sticker rolls in various sizes such as 100x150mm, 50x50mm, and 38x25mm, plus thermal ribbons in 110mm x 300m and 60mm x 300m. Reliable and professional labeling for retail, logistics, and inventory.`, img: barcode_solutions},
+  { id: "lamination-equipment", title: "Lamination Equipment", des: "Professional hot & cold laminator series.", details: `Our lamination equipment offers glossy and matte finishes for documents, posters, and signage. Ensure durability and a polished professional look for all your materials.`, img: laminationEquipment },
+  { id: "office-equipments", title: "Office Equipments", des: "Binding, shredding & scanning machines.", details: `We provide essential office equipment including binding machines, shredders, and scanners. Reliable tools to keep your office workflow smooth and efficient.`, img: officeEquipment },
 ];
 
 const TOKENS = { bg: "#00081a", text: "#E8EEF0", accent: "#60B6D8" };

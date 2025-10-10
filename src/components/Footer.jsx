@@ -10,6 +10,8 @@ import {
   Twitter,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from '../images/logo2.png'
+
 
 export default function Footer() {
   return (
@@ -23,7 +25,7 @@ export default function Footer() {
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <div className="mb-4">
                 <img
-                  src="/logo2.png"
+                  src={logo}
                   alt="TBS Logo"
                   className="w-24 sm:w-28 md:w-36 h-auto object-contain"
                 />

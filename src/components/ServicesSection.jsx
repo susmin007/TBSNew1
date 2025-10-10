@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import servicesImage from '../images/servicesHome.png'
 
 export default function ServicesSection() {
   return (
@@ -28,7 +29,7 @@ export default function ServicesSection() {
             className="flex justify-center"
           >
             <img
-              src="/images/servicesHome.png"
+              src={servicesImage}
               alt="Printing Services"
               className="rounded-2xl w-full max-w-md"
             />

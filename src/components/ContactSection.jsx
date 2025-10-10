@@ -1,5 +1,7 @@
 import React from "react";
 import { Phone, Mail, Globe } from "lucide-react";
+import bgvideo1 from '../images/bgvideo1.mp4';
+
 
 function ContactSection() {
   return (
@@ -15,7 +17,7 @@ function ContactSection() {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1] brightness-50"
       >
-        <source src="/bgvideo1.mp4" type="video/mp4" />
+        <source src={bgvideo1} type="video/mp4" />
       </video>
 
       {/* Grid Layout */}

@@ -3,32 +3,56 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
+import max from '../images/MAX.png';
+  import UHU from  "../images/UHU.jpeg" ;
+  import Schneider from  "../images/schnider.jpeg" 
+  import DoubleA from "../images/doubleA.png"
+  import ALBA from "../images/Alba_Rado_Logo.webp" 
+  import Foska from "../images/foska.jpg";
+import Deli from "../images/DELI-LOGO.png";
+import Kores from "../images/kores.png";
+import Casio from "../images/logo-casio-1024.png";
+import Pilot from "../images/pilot.png";
+import Uni from "../images/MAX.png";
+import Cello from "../images/cello.png";
+import Atlas from "../images/atlas.png";
+import Renz from "../images/renz.png";
+import Kangaro from "../images/kangaro.png";
+import SDI from "../images/SDI.png";
+import SinarLine from "../images/sinarLine.png";
+import Rapid from "../images/rapid_logo.webp";
+import FaberCastel from "../images/faber.webp";
+import Staedtler from "../images/staedtler.png";
+import Maped from "../images/maped.jpg";
+import Hp from "../images/hp.png";
+import Canon from "../images/Canon-Logo.png";
+import Ricoh from "../images/ricoh.png";
 
 const officeBrands = [
-  { name: "MAX", logo: "/images/MAX.png" },
-  { name: "UHU", logo: "/images/UHU.jpeg" },
-  { name: "Schneider", logo: "/images/schnider.jpeg" },
-  { name: "Double A", logo: "/images/doubleA.png" },
-  { name: "ALBA", logo: "/images/Alba_Rado_Logo.webp" },
-  { name: "Foska", logo: "/images/foska.jpg" },
-  { name: "Deli", logo: "/images/DELI-LOGO.png" },
-  { name: "Kores", logo: "/images/kores.png" },
-  { name: "Casio", logo: "/images/logo-casio-1024.png" },
-  { name: "Pilot", logo: "/images/pilot.png" },
-  { name: "Uni", logo: "/images/MAX.png" },
-  { name: "Cello", logo: "/images/cello.png" },
-  { name: "Atlas", logo: "/images/atlas.png" },
-  { name: "Renz", logo: "/images/renz.png" },
-  { name: "Kangaro", logo: "/images/kangaro.png" },
-  { name: "SDI", logo: "/images/SDI.png" },
-  { name: "SinarLine", logo: "/images/sinarLine.png" },
-  { name: "Rapid", logo: "/images/rapid_logo.webp" },
-  { name: "FAber-castel", logo: "/images/faber.webp" },
-  { name: "Staedtler", logo: "/images/staedtler.png" },
-  { name: "maped", logo: "/images/maped.jpg" },
-  { name: "hp", logo: "/images/hp.png" },
-  { name: "canon", logo: "/images/Canon-Logo.png" },
-  { name: "ricoh", logo: "/images/ricoh.png" },
+  { name: "MAX", logo: max},
+  { name: "UHU", logo: UHU},
+  { name: "Schneider", logo: Schneider},
+  { name: "Double A", logo: DoubleA },
+  { name: "ALBA", logo: ALBA },
+ { name: "Foska", logo: Foska },
+  { name: "Deli", logo: Deli },
+  { name: "Kores", logo: Kores },
+  { name: "Casio", logo: Casio },
+  { name: "Pilot", logo: Pilot },
+  { name: "Uni", logo: Uni },
+  { name: "Cello", logo: Cello },
+  { name: "Atlas", logo: Atlas },
+  { name: "Renz", logo: Renz },
+  { name: "Kangaro", logo: Kangaro },
+  { name: "SDI", logo: SDI },
+  { name: "SinarLine", logo: SinarLine },
+  { name: "Rapid", logo: Rapid },
+  { name: "Faber-castel", logo: FaberCastel },
+  { name: "Staedtler", logo: Staedtler },
+  { name: "Maped", logo: Maped },
+  { name: "HP", logo: Hp },
+  { name: "Canon", logo: Canon },
+  { name: "Ricoh", logo: Ricoh },
 ];
 
 export default function OfficeSupplies() {

@@ -1,27 +1,31 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import bgvideo1 from '../images/bgvideo1.mp4';
+import bgim1 from '../images/bgim1.png'
+import bgvideo2 from '../images/bgvideo2.mp4';
+import bgim2 from '../images/bgim2.png'
 
 const sections = [
   {
     id: 1,
     title: "TRANSFORM YOUR BRAND IDENTITY",
     desc: "We craft compelling brand experiences that leave lasting impressions.",
-    bg: "/bgim1.png",
-    video: "/bgvideo1.mp4", // 👈 put video in public/videos
+    bg: bgim1,
+    video: bgvideo1, // 👈 put video in public/videos
   },
   {
     id: 2,
     title: "ELEVATE YOUR CORPORATE GIFTING CAPITAL",
     desc: "Premium corporate gifting solutions designed to impress and inspire.",
-    bg: "/bgim2.png",
-    video: "/bgvideo2.mp4",
+    bg: bgim2,
+    video: bgvideo2,
   },
   {
     id: 3,
     title: "COMPLETE OFFICE SOLUTIONS",
     desc: "From office equipment to services, we deliver complete workplace solutions.",
-    bg: "/bgim1.png",
-    video: "/bgvideo1.mp4",
+    bg: bgim1,
+    video: bgvideo1,
   },
 ];
 
