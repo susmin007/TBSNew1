@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+@keyframes borderGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-border {
+  background-size: 200% 200%;
+  animation: borderGradient 4s linear infinite;
+}
+p{
+  font-family: 'Space Grotesk', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Aktiv Grotesk', sans-serif;
+}
+
