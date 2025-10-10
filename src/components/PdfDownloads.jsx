@@ -5,37 +5,42 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-
+import companyProfile from '../images/TBS.png';
+import companyProfilePdf from '../assets/pdfs/TBSProfile.pdf';
+import giftsCatalog from '../images/giftset.jpg';
+import giftsCatalogPdf from '../assets/pdfs/Gift.pdf';
+import giftsBox from '../images/giftbox.webp';
+import giftsBoxPdf from '../assets/pdfs/GiftBoxCatalog.pdf';
+import giftMCatalog from '../images/MCatalogue.jpg';
+import giftMCatalogPdf from '../assets/pdfs/Giftm.pdf';
+import hak from '../images/HakCatalogue.jpeg';
+import hakCataloguePdf from '../assets/pdfs/HAK.pdf';
 export default function PdfDownloads() {
   const pdfs = [
     {
       title: 'Company Profile',
-      file: '/pdfs/TBSProfile.pdf',
-      cover: '/images/TBS.png',
+      file: companyProfilePdf,
+      cover: companyProfile,
     },
     {
       title: 'Gift Sets Catalogue',
-      file: '/pdfs/Gift.pdf',
-      cover:
-        '/images/giftset.jpg',
+      file: giftsCatalogPdf,
+      cover: giftsCatalog,
     },
     {
       title: 'Gift Box Catalogue',
-      file: '/pdfs/GiftBoxCatalog.pdf',
-      cover:
-        '/images/giftbox.webp',
+      file: giftsBoxPdf,
+      cover:giftsBox,
     },
     {
       title: 'Gift M Catalogue',
-      file: '/pdfs/Giftm.pdf',
-      cover:
-        '/images/MCatalogue.jpg',
+      file: giftMCatalogPdf,
+      cover:giftMCatalog,
     },
     {
       title: 'HAK Catalogue',
-      file: '/pdfs/HAK.pdf',
-      cover:
-        '/images/HakCatalogue.jpeg',
+      file: hakCataloguePdf,
+      cover:hak,
     },
 
   ];
