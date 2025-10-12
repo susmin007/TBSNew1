@@ -1,17 +1,31 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import servicesImage from '../images/servicesHome.png'
+import servicesImage from "../images/servicesHome.png";
 
 export default function ServicesSection() {
+  // Enable smooth scroll when navigating via navbar anchor
+  useEffect(() => {
+    const html = document.querySelector("html");
+    if (html) html.style.scrollBehavior = "smooth";
+    return () => {
+      if (html) html.style.scrollBehavior = "auto";
+    };
+  }, []);
+
   return (
-    <section id="services" className="relative py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden" >
+    <section
+      id="services"
+      className="relative py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-5xl font-bold bg-clip-text font-blackhan  text-transparent 
+          className="text-5xl font-blackhan font-bold bg-clip-text text-transparent 
                      bg-gradient-to-r from-[rgb(60,207,215)] via-cyan-500 to-blue-600 
                      text-center mb-16"
         >
@@ -31,7 +45,7 @@ export default function ServicesSection() {
             <img
               src={servicesImage}
               alt="Printing Services"
-              className="rounded-2xl w-full max-w-md"
+              className="rounded-2xl w-full max-w-md shadow-lg"
             />
           </motion.div>
 
@@ -51,7 +65,7 @@ export default function ServicesSection() {
               to meet your unique needs with precision and creativity.
             </p>
             <motion.a
-              href="/services"
+              href="#services"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-block mt-4 px-6 py-3 text-sm font-semibold text-white rounded-lg 
