@@ -43,7 +43,7 @@ function ContactSection() {
               const message = e.target[2].value;
               const subject = encodeURIComponent("New Message from Contact Form");
               const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-              window.location.href = `mailto:infotbsoman@gmail.com?subject=${subject}&body=${body}`;
+              window.location.href = `mailto:nfo@truestaroman.com?subject=${subject}&body=${body}`;
             }}
           >
             <input
