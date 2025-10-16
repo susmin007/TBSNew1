@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
+    "build:github": "cross-env GITHUB_PAGES=true vite build",
+    "build:custom": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy:github": "npm run build:github && gh-pages -d dist",
+    "deploy:custom": "npm run build:custom && echo '✅ Upload dist/ to truestaroman.com manually via cPanel or Netlify'"
   },
   "dependencies": {
     "framer-motion": "^12.23.22",
@@ -26,6 +28,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
     "autoprefixer": "^10.4.0",
+    "cross-env": "^10.1.0",
     "gh-pages": "^6.3.0",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.3.0",
