@@ -1,7 +1,7 @@
 {
   "name": "office-solutions-site",
   "version": "1.0.0",
-  "homepage": "https://susmin007.github.io/TBSNew1/",
+  "homepage": "https://github.com/susmin007/TBSNew1",
   "private": true,
   "scripts": {
     "dev": "vite --open",
