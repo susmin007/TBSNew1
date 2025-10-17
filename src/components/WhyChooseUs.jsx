@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
     <section
       id="why-choose-us"
       className="relative w-full py-24 px-6 md:px-16 
-                 bg-[url('/images/whyus.avif')] 
+                 bg-[url('./images/whyus.avif')] 
                  bg-cover bg-center bg-fixed"
     >
       <div className="absolute inset-0 bg-gradient-to-r from-cyan-700/60 via-blue-800/60 to-cyan-900/60"></div>

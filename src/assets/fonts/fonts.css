@@ -1,5 +1,7 @@
 /* src/assets/fonts/fonts.css */
 
+/* === Aktiv Grotesk Font Faces === */
+
 @font-face {
   font-family: 'Aktiv Grotesk';
   src: url('./AktivGrotesk-Regular.ttf') format('truetype');
@@ -31,38 +33,3 @@
   font-style: italic;
   font-display: swap;
 }
-
-/* src/assets/fonts/fonts.css */
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('./SpaceGrotesk-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('./SpaceGrotesk-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('./SpaceGrotesk-Italic.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('./SpaceGrotesk-BoldItalic.otf') format('opentype');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-

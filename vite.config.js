@@ -1,11 +1,7 @@
-// vite.config.js
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  // base: isGitHubPages ? '/TBSNew1/' : '/',
-  base:'/',
   plugins: [react()],
-});
+  base: '/TBSNew/', // 👈 important! matches your repo name
+})
