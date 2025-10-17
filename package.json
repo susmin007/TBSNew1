@@ -9,6 +9,7 @@
     "build:github": "cross-env GITHUB_PAGES=true vite build",
     "build:custom": "vite build",
     "preview": "vite preview",
+    "deploy": "npm run deploy:custom",
     "deploy:github": "npm run build:github && gh-pages -d dist",
     "deploy:custom": "npm run build:custom && echo '✅ Upload dist/ to truestaroman.com manually via cPanel or Netlify'"
   },
